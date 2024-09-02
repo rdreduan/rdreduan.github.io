@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
 <head>
     <title>//:~Hacked By R3DU4N~://</title>
@@ -441,3 +442,5 @@ var app = {
 document.addEventListener('DOMContentLoaded', app.init);
 
 </script>
+</body>
+</html>
