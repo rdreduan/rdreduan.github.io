@@ -1,188 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Hacked By R3DU4N</title>
-    <link rel="stylesheet" href="./style.css">
-
-</head>
-
-<body>
-    <div class="mainContainer">
-
-
-        <div class="img">
-            <img class="mainImage" src="https://i.ibb.co/tDZmMBm/images.jpg" alt="image">
-        </div>
-        <h1> Hacked By R3DU4N</h1>
-        <hr class="hr">
-
-        <div class="container">
-            <h2 class="teamName"> <span> Team </span> Copyright™ </h2>
-            <p class="text1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet non magnam velit et sapiente sint
-                sed harum officia vel? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Debitis, nesciunt! Vero fuga deserunt eius hic quia magni odio ab.
-
-            </p>
-
-            <textarea name="textbox" class="textbox" cols="70" rows="2">
-rdreduanofficial@gmail.com
- www.facebook.com/rd_reduan1
-            </textarea>
-
-
-            <p class="text2">We are team copyright, work for humanity, work for cyber security.
-            </p>
-        </div>
-    </div>
-</body>
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Logo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rd Reduan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/tDZmMBm/images.jpg">
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-        * {
-            box-sizing: border-box;
+        body {
+            background-color: #181818;
+            color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        body,
-        html {
-            background: #000000;
-            font-family: 'Trebuchet MS', sans-serif;
+        header {
+            background-color: #222;
+            padding: 20px 0;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
-        .mainContainer h1 {
-            font-family: 'Josefin Sans', sans-serif;
-            padding: 5px 0px 10px 0px;
+        header h1 {
+            margin: 0;
+            color: #ff9800;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav a {
             color: #ffffff;
-            text-shadow: 0 0 10px #11d30b;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.3s ease-in-out;
         }
 
-        .mainContainer h1:hover {
-            text-shadow: 0 0 14px #0b7e07;
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            background: #ff9800;
+            transition: width 0.3s;
+            bottom: -5px;
+            left: 0;
         }
 
-        .container .teamName {
-            text-transform: uppercase;
-            padding: 10px 0px;
-            letter-spacing: 20px;
-            font-family: 'Josefin Sans', sans-serif;
-            color: #0ae7d5;
-            font-size: 17px;
+        nav a:hover {
+            color: #ff9800;
         }
 
-        .container .teamName span {
-            color: red;
+        nav a:hover::after {
+            width: 100%;
         }
 
-        .hr {
-            width: 600px;
-            border: 2px solid #292b2983;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        .mainImage {
-            margin: 20px 0px;
-            width: 200px;
-            border: 3px solid rgba(14, 167, 14, 0.774);
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .post {
+            margin-bottom: 60px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .post h2 {
+            color: #ff9800;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .post img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .sidebar h3 {
+            color: #ff9800;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ff9800;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
             border-radius: 50%;
-            box-shadow: 0px 0px 17px #06d117;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        .mainImage:hover {
-            box-shadow: 0px 0px 19px #0c8a16;
+        .social-links a svg {
+            fill: #ffffff;
+            width: 20px;
+            height: 20px;
+            transition: fill 0.3s ease-in-out;
         }
 
-        .mainContainer {
-            text-shadow: 2px 2px 2px 2px green;
+        .social-links a:hover {
+            background-color: #ff9800;
         }
 
-        .text1 {
-            padding: 5px 200px;
-            text-transform: uppercase;
-            color: green;
+        .social-links a:hover svg {
+            fill: #181818;
         }
 
-        .textbox {
-            background-color: #97e900;
-            color: #000000;
-            font-size: 17px;
-            border-radius: 20px;
-            padding: 10px 0px;
-            border: none;
+        footer {
+            background-color: #222;
+            color: #888;
             text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
         }
 
-        .text2 {
-            color: #ffffff;
-            font-size: 22px;
-            letter-spacing: 5px;
-            font-family: 'Waterfall', cursive;
-        }
-
-        @media only screen and (max-width:500px) {
-            .text1 {
-                padding: 0px 20px;
-                text-transform: uppercase;
-                color: #008000;
-            }
-
-            .effect2 {
-                font-size: 17px;
-                padding-top: 1px;
-            }
-
-            .container .teamName {
-                padding: 10px 0px;
-                letter-spacing: 12px;
-                font-size: 14px;
-            }
-
-            .mainContainer h1 {
-                padding: 2px 0px;
-            }
-
-            .textbox {
-                font-size: 13px;
-                width: 300px;
-            }
-
-            .hr {
-                width: 300px;
-            }
-
-            .text2 {
-                color: #ffffff;
-                font-size: 17px;
-                letter-spacing: 4px;
-                font-family: 'Waterfall', cursive;
-            }
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="mainContainer">
-        <h1>Personal Logo</h1>
-        <div class="container">
-            <div class="RD REDUAN">Team <span>Name</span></div>
-            <img src="https://i.ibb.co/tDZmMBm/images.jpg" alt="Main Image" class="mainImage">
-            <hr class="hr">
-            <div class="text1">Text Example</div>
-            <input type="text" class="textbox" placeholder="Textbox Example">
-            <div class="text2">More Text</div>
+    <header>
+    <h1 style="font-family: 'Pacifico', cursive;">Rd Reduan</h1>
+</header>
+
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="https://rdcybertech.blogspot.com/">Blog</a>
+        <a href="https://www.facebook.com/rd.reduan.1">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div class="post">
+                <h2>Exploring the Depths of Code</h2>
+                <img src="https://i.ibb.co/ChQCRLJ/960x0.webp/900x300" alt="Blog Image">
+                <p>"Exploring the Depths of Code" involves a thorough examination and understanding of various coding practices and principles. It means delving into advanced concepts like design patterns, functional and object-oriented programming, data structures, algorithms, and code optimization. This approach aims to enhance code quality, improve performance, and ensure maintainability by mastering both fundamental and sophisticated aspects of software development.</p>
+            </div>
+            
+            <div class="post">
+                <h2>The Art of Ethical Hacking</h2>
+                <img src="https://i.ibb.co/kQPmBTF/https-dev-to-uploads-s3-amazonaws-com-uploads-articles-mz6n5qf2fqsfin2tww73.jpg/900x300" alt="Blog Image">
+                <p>"The Art of Ethical Hacking" involves using authorized techniques to identify and address security vulnerabilities in systems and networks. Ethical hackers, or white-hat hackers, apply their skills to strengthen security measures and protect against cyber threats, all while adhering to legal and ethical standards.</p>
+            </div>
+
+            <div class="post">
+                <h2>Web Development Tips & Tricks</h2>
+                <img src="https://i.ibb.co/8NRmqST/1681121582915.jpg/900x300" alt="Blog Image">
+                <p>"Web Development Tips & Tricks" involve strategies and best practices for creating efficient, user-friendly, and maintainable websites. These include optimizing website performance, ensuring cross-browser compatibility, following responsive design principles, using version control systems, and keeping up with the latest web technologies and frameworks to enhance development efficiency and site quality.</p>
+            </div>
         </div>
+
+        <aside class="sidebar">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/understanding-web-security.html">Understanding Web Security</a></li>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/top-10-coding-practices.html">Top 10 Coding Practices</a></li>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/learning-python-in-2024.html">Learning Python in 2024</a></li>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/exploring-javascript-es6-features.html">Exploring JavaScript ES6 Features</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/web-development-html-css-javascript.html">Web Development</a></li>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/cybersecurity.html">Cybersecurity</a></li>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/data-science.html">Data Science</a></li>
+                <li><a href="https://rdcybertech.blogspot.com/2024/09/programming.html">Programming</a></li>
+            </ul>
+        </aside>
     </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/rd.reduan.1" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.734 0-1.325.591-1.325 1.325v21.351c0 .734.591 1.324 1.325 1.324h11.497v-9.294h-3.131v-3.622h3.131v-2.671c0-3.1 1.893-4.788 4.656-4.788 1.324 0 2.461.099 2.791.142v3.236l-1.915.001c-1.5 0-1.793.712-1.793 1.76v2.32h3.588l-.467 3.622h-3.121v9.295h6.117c.734 0 1.324-.591 1.324-1.324v-21.352c0-.734-.591-1.325-1.325-1.325z"/></svg>
+        </a>
+        <a href="https://x.com/rd_reduan" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 4.557c-.883.389-1.83.654-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.194-.897-.957-2.178-1.555-3.594-1.555-2.722 0-4.928 2.206-4.928 4.928 0 .387.044.763.127 1.124-4.096-.206-7.725-2.166-10.15-5.144-.425.729-.666 1.575-.666 2.476 0 1.708.869 3.216 2.188 4.099-.807-.025-1.566-.247-2.228-.616v.062c0 2.386 1.697 4.377 3.946 4.828-.413.112-.849.171-1.296.171-.317 0-.626-.03-.928-.087.627 1.957 2.445 3.381 4.6 3.422-1.685 1.321-3.808 2.107-6.115 2.107-.398 0-.79-.023-1.175-.068 2.179 1.397 4.768 2.212 7.548 2.212 9.055 0 14.01-7.504 14.01-14.009 0-.214-.005-.426-.015-.637.961-.695 1.797-1.562 2.457-2.549z"/></svg>
+        </a>
+        <a href="https://github.com/rdreduan/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.004 5.268c-3.7 0-6.711 3.011-6.711 6.713 0 3.036 1.974 5.63 4.702 6.495.344.063.473-.149.473-.332v-1.257c-1.911.416-2.317-.928-2.317-.928-.313-.797-.765-1.01-.765-1.01-.625-.427.047-.418.047-.418.691.048 1.052.707 1.052.707.614 1.051 1.611.748 2.005.572.062-.446.24-.748.435-.92-1.525-.175-3.126-.762-3.126-3.396 0-.749.267-1.362.705-1.841-.071-.173-.31-.878.068-1.828 0 0 .579-.185 1.896.702.55-.153 1.138-.23 1.723-.232.585.002 1.173.079 1.723.232 1.318-.887 1.897-.702 1.897-.702.379.95.14 1.655.069 1.828.44.479.705 1.092.705 1.841 0 2.641-1.603 3.218-3.132 3.392.247.213.466.635.466 1.279v1.896c0 .185.129.397.475.332 2.726-.867 4.698-3.46 4.698-6.495 0-3.702-3.01-6.713-6.711-6.713z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/rd.reduan.12" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.004 0c-6.627 0-12 5.373-12 12 0 5.316 4.338 9.719 9.996 9.996v-7.064h-3.008v-2.932h3.008v-2.161c0-2.973 1.781-4.609 4.496-4.609 1.308 0 2.682.235 2.682.235v2.935h-1.512c-1.491 0-1.956.929-1.956 1.88v2.16h3.3l-.528 2.933h-2.772v7.064c5.658-.277 9.996-4.68 9.996-9.996 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://ar.pinterest.com/rdreduanofficial/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c-5.47 0-9.84 4.37-9.84 9.84 0 4.898 3.568 8.958 8.255 9.77-.114-.838-.216-2.127.045-3.042.236-.828 1.528-5.267 1.528-5.267s-.39-.783-.39-1.938c0-1.814 1.052-3.171 2.364-3.171 1.115 0 1.653.836 1.653 1.838 0 1.119-.712 2.796-1.079 4.348-.306 1.297.649 2.354 1.922 2.354 2.306 0 3.852-2.956 3.852-6.445 0-2.649-1.782-4.633-5.023-4.633-3.653 0-5.92 2.732-5.92 5.797 0 1.054.403 2.187.906 2.8.1.119.114.223.083.344-.09.37-.295 1.178-.334 1.342-.052.217-.174.262-.404.157-1.506-.694-2.446-2.876-2.446-4.637 0-3.766 2.726-7.227 7.853-7.227 4.117 0 7.312 2.939 7.312 6.856 0 4.075-2.566 7.356-6.122 7.356-1.194 0-2.32-.619-2.707-1.345l-.735 2.793c-.266 1.014-1 2.29-1.493 3.065 1.124.348 2.313.537 3.553.537 5.47 0 9.84-4.37 9.84-9.84 0-5.471-4.37-9.841-9.841-9.841z"/></svg>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rd Reduan Blog. All rights reserved.</p>
+    </footer>
 </body>
-
-
-
 </html>
