@@ -9,26 +9,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
         body {
-            background-color: #181818;
-            color: #f0f0f0;
+            background-color: #585c6a;
+            color: #1c45d0;
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #222;
+            background-color: #0a4891;
             padding: 20px 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
-            color: #ff9800;
+            color: #fff;
             font-size: 2.5rem;
             letter-spacing: 2px;
         }
@@ -36,15 +36,17 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
             padding: 15px 0;
         }
 
         nav a {
-            color: #ffffff;
+            color: #0a4891;
             text-decoration: none;
             margin: 0 20px;
             font-size: 18px;
+            font-weight: 600;
             position: relative;
             transition: color 0.3s ease-in-out;
         }
@@ -55,14 +57,14 @@
             width: 0;
             height: 2px;
             display: block;
-            background: #ff9800;
+            background: #4a90e2;
             transition: width 0.3s;
             bottom: -5px;
             left: 0;
         }
 
         nav a:hover {
-            color: #ff9800;
+            color: #333;
         }
 
         nav a:hover::after {
@@ -85,13 +87,14 @@
         .post {
             margin-bottom: 60px;
             padding: 20px;
-            background-color: #1e1e1e;
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eaeaea;
         }
 
         .post h2 {
-            color: #ff9800;
+            color: #0a4891;
             font-size: 2rem;
             margin-bottom: 10px;
         }
@@ -106,19 +109,20 @@
             max-width: 100%;
             border-radius: 8px;
             margin: 20px 0;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .sidebar {
             flex: 1;
             padding: 20px;
-            background-color: #1e1e1e;
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eaeaea;
         }
 
         .sidebar h3 {
-            color: #ff9800;
+            color: #0a4891;
             margin-bottom: 20px;
         }
 
@@ -132,14 +136,14 @@
         }
 
         .sidebar ul li a {
-            color: #ffffff;
+            color: #333;
             text-decoration: none;
             font-size: 1.1rem;
             transition: color 0.3s ease-in-out;
         }
 
         .sidebar ul li a:hover {
-            color: #ff9800;
+            color: #0a4891;
         }
 
         .social-links {
@@ -153,27 +157,28 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background-color: #333;
+            background-color: #f0f4f8;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             transition: background-color 0.3s ease-in-out;
+            border: 1px solid #eaeaea;
         }
 
         .social-links a svg {
-            fill: #ffffff;
+            fill: #0a4891;
             width: 20px;
             height: 20px;
             transition: fill 0.3s ease-in-out;
         }
 
         .social-links a:hover {
-            background-color: #ff9800;
+            background-color: #0a4891;
         }
 
         .social-links a:hover svg {
-            fill: #181818;
+            fill: #fff;
         }
 
         footer {
@@ -203,7 +208,7 @@
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="https://rdcybertech.blogspot.com/">Blog</a>
+        <a href="https://rdreduan.blogspot.com/">Blog</a>
         <a href="https://www.facebook.com/rd.reduan.1">Contact</a>
     </nav>
 
@@ -231,17 +236,17 @@
         <aside class="sidebar">
             <h3>Recent Posts</h3>
             <ul>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/understanding-web-security.html">Understanding Web Security</a></li>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/top-10-coding-practices.html">Top 10 Coding Practices</a></li>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/learning-python-in-2024.html">Learning Python in 2024</a></li>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/exploring-javascript-es6-features.html">Exploring JavaScript ES6 Features</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/understanding-web-security.html">Understanding Web Security</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/top-10-coding-practices.html">Top 10 Coding Practices</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/learning-python-in-2024.html">Learning Python in 2024</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/exploring-javascript-es6-features.html">Exploring JavaScript ES6 Features</a></li>
             </ul>
             <h3>Categories</h3>
             <ul>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/web-development-html-css-javascript.html">Web Development</a></li>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/cybersecurity.html">Cybersecurity</a></li>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/data-science.html">Data Science</a></li>
-                <li><a href="https://rdcybertech.blogspot.com/2024/09/programming.html">Programming</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/web-development-html-css-javascript.html">Web Development</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/cybersecurity.html">Cybersecurity</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/data-science.html">Data Science</a></li>
+                <li><a href="https://rdreduan.blogspot.com/2024/09/programming.html">Programming</a></li>
             </ul>
         </aside>
     </div>
